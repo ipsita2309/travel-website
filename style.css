@@ -1,0 +1,179 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #f0f9ff, #ffffff); /* light blue to white */
+  color: #333;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 35%;
+}
+
+p {
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a.active {
+  border-bottom: 2px solid gold;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+  background: none; /* remove dark background if applied */
+  color: #003366;   /* deep navy blue for readability */
+}
+
+.intro h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0077b6;   /* ocean blue heading */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* subtle depth */
+}
+
+.intro p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #444;  /* softer gray for body text */
+}
+
+
+/* Sections */
+section {
+  padding: 40px;
+}
+.filter {
+  text-align: center;
+}
+.filter select,
+.filter input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Recommendations */
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;   /* ✅ This centers the cards */
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  text-align: center;   /* ✅ Center text under images */
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.card p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Favorites */
+.fav-btn {
+  margin-top: 8px;
+  padding: 5px 10px;
+  background: gold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.fav-btn:hover {
+  background: orange;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+form input, form textarea, form button {
+  margin: 10px 0;
+  padding: 10px;
+}
+form button {
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background: #555;
+}
+
+/* Destination Details */
+.detail-img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+}
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.recommendation h2 {
+  text-align: center;   /* ✅ Centers the section headings */
+  margin-bottom: 15px;
+}
+
+.recommendation {
+  margin-bottom: 40px;  /* default gap */
+}
+
+/* For tablets */
+@media (min-width: 600px) {
+  .recommendation {
+    margin-bottom: 60px;
+  }
+}
+
+/* For desktops */
+@media (min-width: 1024px) {
+  .recommendation {
+    margin-bottom: 80px;
+  }
+}
